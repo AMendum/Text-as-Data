@@ -1,5 +1,5 @@
-# Text-as-Data Progress
-## Annabel Mendum
+# Text-as-Data 
+### Annabel Mendum
 This is where I will record my progress on my final project for DACSS 758, Text-as-Data. 
 
 ## Blog Post 1 
