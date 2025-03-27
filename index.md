@@ -23,13 +23,19 @@ In this project, I am investigating the portrayal of families in news media usin
 Since my last blog post, I spent some time exploring TDM Studio, and I now have my environment and data set up and have been able to start the real work of the final project. 
 
 As I began exploring the data, one of the first things I did was to visualize feature co-occurrence. 
+
 ![Screenshot 2025-03-26 101942](https://github.com/user-attachments/assets/6796ecb3-d40b-4fa9-a489-1765586dce11)
 
+
 When looking at this graph, the first thing I noticed is that there are very strong relationships between words that seem to be describing houses or apartments. Since these are probably not very relevant to what I'm investigating, I might need to look into dropping housing listings from my dataset. Before I did that though, I wanted to look into what other topics are prevalent in my data. After fitting an LDA model with 10 topics, I looked at the relevant words associated with each topic. With lambda set to 0.2, the top ten words for each topic can be seen in the table below: 
+
 ![image](https://github.com/user-attachments/assets/8734b143-ec2e-47a8-9a51-4cea786b1453)
 
+
 Each column represents a different topic, and it's clear that the LDA model is able to pick up on some topics that definitely make sense in the context of newspaper articles; in large part, these topics seem to mirror the sections of the newspaper. I then plotted the distribution of topics for the first document, shown here: 
+
 ![image](https://github.com/user-attachments/assets/66210fa7-99b0-48b9-a667-57c16e908140)
+
 
 The first document is very heavily leaning towards topic five, which includes words such as funeral, survived, and beloved. The first document in my dataset happens to be an obituary, so seeing that it is full of words from topic five makes complete sense. Based on these results, I'm pretty happy with how well LDA worked for my data, although I may play around with it a bit more to see if there is a more ideal number of topics than 10. I'm also curious about going deeper into the data; can I subset the documents into the original topics and then fit another LDA model to find subtopics? 
 
